@@ -1,0 +1,42 @@
+#edit-categories {
+    padding: 20px;
+    min-width: 400px;
+    max-width: 600px;
+    justify-content: center;
+}
+  
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+  
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin: 7px;
+}
+  
+.item-name {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+  
+.category-selector {
+    width: 100%;
+    font-size: 12px;
+}
+  
+.category-selector select {
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+  

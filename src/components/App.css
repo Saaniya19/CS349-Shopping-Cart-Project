@@ -1,0 +1,19 @@
+/* styles for the main app container */
+div#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh; 
+  /* padding: 16px;  Padding to ensure the content doesn't touch the edges */
+}
+
+div#left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  /* 16px gap between each section */
+}

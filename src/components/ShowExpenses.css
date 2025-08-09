@@ -1,0 +1,69 @@
+#show-expenses {
+    padding: 20px;
+    z-index: 20;
+    overflow-x: auto;
+    display: flex;
+}
+  
+table {
+    flex: 1;
+    min-width: 400px;
+    width: 600px;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+  
+td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+td.name {
+    min-width: 150px;
+    width: 30%;
+}
+
+td.quantity {
+    min-width: 60px;
+    width: 20%;
+}
+
+td.price {
+    min-width: 60px;
+    width: 20%;  
+}
+
+td.total {
+    min-width: 60px;
+    width: 20%;  
+}
+
+/* .loading-dots {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+} */
+
+.loading-dots::after {
+    content: ".";
+    animation-name: dot-blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    width: 50px;
+    font-size: 20px;
+}
+  
+@keyframes dot-blink {
+    0% {
+      content: ".";
+    }
+    33% {
+      content: "..";
+    }
+    66% {
+      content: "...";
+    }
+}
+  
+  

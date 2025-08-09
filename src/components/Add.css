@@ -1,0 +1,38 @@
+#add {
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+
+#add input[type="text"], 
+#add input[type="number"], 
+#add select, 
+#add button {
+  margin: 0;
+  padding: 2px;
+  font-size: 16px;
+}
+
+#add input[type="text"] {
+  flex-grow: 1;
+}
+
+#add input[type="number"] {
+  width: 80px;
+}
+
+#add select {
+  width: 100px;
+}
+
+#add button {
+  width: 100px;
+  /* padding: 6px; */
+  font-size: 16px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+#add button:hover {
+  background-color: #d0d0d0;
+}

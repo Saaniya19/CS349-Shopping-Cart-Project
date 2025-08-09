@@ -1,0 +1,51 @@
+#status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.status-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+  
+.num-items {
+    font-size: 30px;
+    color: #c259ff;
+    padding-left: 8px;
+    padding-right: 8px;
+    animation: count-up 2s ease-out forwards;
+}
+
+@keyframes count-up {
+    from {
+      transform: scale(1.0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1.0);
+      opacity: 0.5;
+    }
+}
+  
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #c259ff, 0 0 10px #da9cff, 0 0 15px #c259ff;
+    }
+    50% {
+      text-shadow: 0 0 10px #c259ff, 0 0 20px #da9cff, 0 0 30px #c259ff;
+    }
+    100% {
+      text-shadow: 0 0 5px #c259ff, 0 0 10px #da9cff, 0 0 15px #c259ff;
+    }
+}
+
+.num-items {
+    animation: glow 1.5s infinite alternate;
+}
+  
